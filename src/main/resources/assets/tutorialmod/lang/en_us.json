@@ -3,5 +3,8 @@
   "item.tutorialmod.raw_gemstone": "Raw Gemstone",
 
   "block.tutorialmod.gemstone_block": "Block of Gemstone",
-  "block.tutorialmod.raw_gemstone_block": "Block of Raw Gemstone"
+  "block.tutorialmod.raw_gemstone_block": "Block of Raw Gemstone",
+
+  "creativetab.tutorialmod.gemstone_items": "Gemstone Items",
+  "creativetab.tutorialmod.gemstone_blocks": "Gemstone Blocks"
 }

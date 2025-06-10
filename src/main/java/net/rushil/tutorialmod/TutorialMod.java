@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rushil.tutorialmod.block.ModBlocks;
+import net.rushil.tutorialmod.item.ModCreativeModeTabs;
 import net.rushil.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -34,6 +35,8 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -50,6 +53,7 @@ public class TutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        /*
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.GEMSTONE);
             event.accept(ModItems.RAW_GEMSTONE);
@@ -58,6 +62,7 @@ public class TutorialMod {
             event.accept(ModBlocks.GEMSTONE_BLOCK);
             event.accept(ModBlocks.RAW_GEMSTONE_BLOCK);
         }
+        */
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
