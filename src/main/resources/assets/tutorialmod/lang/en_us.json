@@ -1,4 +1,7 @@
 {
-  "item.tutorialmod.gemstone": "Gem Stone",
-  "item.tutorialmod.raw_gemstone": "Raw Gem Stone"
+  "item.tutorialmod.gemstone": "Gemstone",
+  "item.tutorialmod.raw_gemstone": "Raw Gemstone",
+
+  "block.tutorialmod.gemstone_block": "Block of Gemstone",
+  "block.tutorialmod.raw_gemstone_block": "Block of Raw Gemstone"
 }
