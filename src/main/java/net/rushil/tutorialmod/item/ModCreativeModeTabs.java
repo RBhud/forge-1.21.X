@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.GEMSTONE_BLOCK.get());
                         output.accept(ModBlocks.RAW_GEMSTONE_BLOCK.get());
+                        output.accept(ModBlocks.GEMSTONE_ORE.get());
+                        output.accept(ModBlocks.GEMSTONE_DEEPSLATE_ORE.get());
 
                     }).build());
 

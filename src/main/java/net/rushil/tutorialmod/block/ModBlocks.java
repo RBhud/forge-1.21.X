@@ -1,8 +1,10 @@
 package net.rushil.tutorialmod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,7 +26,18 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RAW_GEMSTONE_BLOCK = registerBlock("raw_gemstone_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
+
+    public static final RegistryObject<Block> GEMSTONE_ORE = registerBlock("gemstone_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GEMSTONE_DEEPSLATE_ORE = registerBlock("gemstone_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 4), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

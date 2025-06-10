@@ -4,6 +4,8 @@
 
   "block.tutorialmod.gemstone_block": "Block of Gemstone",
   "block.tutorialmod.raw_gemstone_block": "Block of Raw Gemstone",
+  "block.tutorialmod.gemstone_ore": "Gemstone Ore",
+  "block.tutorialmod.gemstone_deepslate_ore": "Gemstone Deepslate Ore",
 
   "creativetab.tutorialmod.gemstone_items": "Gemstone Items",
   "creativetab.tutorialmod.gemstone_blocks": "Gemstone Blocks"
