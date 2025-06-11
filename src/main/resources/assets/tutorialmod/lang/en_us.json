@@ -1,12 +1,17 @@
 {
   "item.tutorialmod.gemstone": "Gemstone",
   "item.tutorialmod.raw_gemstone": "Raw Gemstone",
+  "item.tutorialmod.pearl": "Pearl",
 
   "block.tutorialmod.gemstone_block": "Block of Gemstone",
   "block.tutorialmod.raw_gemstone_block": "Block of Raw Gemstone",
   "block.tutorialmod.gemstone_ore": "Gemstone Ore",
   "block.tutorialmod.gemstone_deepslate_ore": "Gemstone Deepslate Ore",
+  "block.tutorialmod.pearl_block": "Block of Pearl",
+  "block.tutorialmod.sand_covered_pearl": "Sand Covered Pearl",
 
   "creativetab.tutorialmod.gemstone_items": "Gemstone Items",
-  "creativetab.tutorialmod.gemstone_blocks": "Gemstone Blocks"
+  "creativetab.tutorialmod.gemstone_blocks": "Gemstone Blocks",
+  "creativetab.tutorialmod.pearl_items": "Pearl Items",
+  "creativetab.tutorialmod.pearl_blocks": "Pearl Blocks"
 }

@@ -35,6 +35,25 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> PEARL_ITEMS_TAB = CREATIVE_MODE_TABS.register("pearl_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PEARL.get()))
+                    .withTabsBefore(GEMSTONE_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.tutorialmod.pearl_items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.PEARL.get());
+
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> PEARL_BLOCKS_TAB = CREATIVE_MODE_TABS.register("pearl_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.PEARL_BLOCK.get()))
+                    .withTabsBefore(PEARL_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.tutorialmod.pearl_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.PEARL_BLOCK.get());
+                        output.accept(ModBlocks.SAND_COVERED_PEARL.get());
+
+                    }).build());
+
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }

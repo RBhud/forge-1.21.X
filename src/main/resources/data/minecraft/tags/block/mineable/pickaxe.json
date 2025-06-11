@@ -4,6 +4,7 @@
     "tutorialmod:gemstone_block",
     "tutorialmod:raw_gemstone_block",
     "tutorialmod:gemstone_ore",
-    "tutorialmod:gemstone_deepslate_ore"
+    "tutorialmod:gemstone_deepslate_ore",
+    "tutorialmod:pearl_block"
   ]
 }
