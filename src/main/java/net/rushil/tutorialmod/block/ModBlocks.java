@@ -44,7 +44,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAND_COVERED_PEARL = registerBlock("sand_covered_pearl",
             () -> new FallingBlock(BlockBehaviour.Properties.of()
-                    .strength(1f).requiresCorrectToolForDrops().sound(SoundType.SAND)) {
+                    .strength(1f).sound(SoundType.SAND)) {
                 @Override
                 protected MapCodec<? extends FallingBlock> codec() {
                     return null;

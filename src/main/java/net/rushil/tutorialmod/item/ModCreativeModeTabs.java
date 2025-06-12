@@ -21,6 +21,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GEMSTONE.get());
                         output.accept(ModItems.RAW_GEMSTONE.get());
 
+                        output.accept(ModItems.CHISEL.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> GEMSTONE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("gemstone_blocks_tab",
