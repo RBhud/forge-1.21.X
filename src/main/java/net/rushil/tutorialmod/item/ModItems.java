@@ -8,6 +8,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.rushil.tutorialmod.TutorialMod;
 import net.rushil.tutorialmod.item.custom.ChiselItem;
+import net.rushil.tutorialmod.item.custom.IceWandItem;
 
 public class ModItems {
 
@@ -25,6 +26,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel",
             () -> new ChiselItem(new Item.Properties().durability(32)));
+
+public static final RegistryObject<Item> ICE_WAND = ITEMS.register("ice_wand",
+            () -> new IceWandItem(new Item.Properties().durability(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_GEMSTONE.get());
 
                         output.accept(ModItems.CHISEL.get());
+                        output.accept(ModItems.ICE_WAND.get());
 
                     }).build());
 

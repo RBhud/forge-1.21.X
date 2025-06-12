@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "tutorialmod:gemstone"
+    },
+    "B": {
+      "item": "tutorialmod:pearl"
+    }
+  },
+  "pattern": [
+    "  A",
+    " B ",
+    "B  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:ice_wand"
+  }
+}
